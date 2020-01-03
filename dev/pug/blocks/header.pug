@@ -1,0 +1,33 @@
+header.header
+  .header__logo
+    a(href="/")
+      img(src="/static/images/general/logo.png", alt="")
+  .header__nav
+    nav#nav
+      a.close(href="#") &times;
+      ul
+        li
+          a(href="#about") О нас
+        li
+          a(href="#services") Услуги
+        li
+          a(href="#team") Специалисты
+        li
+          a(href="#gallery") Галерея
+        li
+          a(href="#more") Сотрудничество
+        li
+          a(href="#contacts") Контакты
+    .langs
+      span.langs__active RU
+      ul#langs
+        li
+          a(href="/en") EN
+        li
+          a(href="/kg") KG
+        li
+          a(href="/") RU
+    a.header__nav-mobile(href="#nav")
+      .hamburger-line
+      .hamburger-line
+      .hamburger-line

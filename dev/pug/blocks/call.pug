@@ -1,0 +1,16 @@
+section.call
+  .container
+    .row
+      .col-lg-7.mb-5.mb-lg-0
+        h1.text-uppercase.mb-3 Желаете связаться <br> с нами?
+        p.mb-3 Оставьте заявку на нашем сайте или <br> напишите нам на What’s App!
+        .call__links
+          a(href="https://wa.me/7996773090091", target="_blank")
+            img(src="/static/images/general/wp.png", alt="")
+      .col-lg-5
+        form.call__form.text-center(action="/smart02.php", method="POST")
+          h2.mb-4 Форма заявки
+          .inputs.mb-4
+            input(type="text", placeholder="Имя:", name="name", required)
+            input(type="text", placeholder="Телефон:", name="phone", required)
+          button.btn-bg Оставить заявку

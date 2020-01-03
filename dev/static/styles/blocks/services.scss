@@ -1,0 +1,92 @@
+.services {
+  position: relative;
+
+  .bg {
+    position: absolute;
+    z-index: -1;
+    top: rem(80);
+    right: 0;
+    width: 30%;
+    height: 754px;
+    background: center/cover;
+  }
+
+  h1 {
+    position: relative;
+    text-transform: uppercase;
+    font-size: rem(48);
+    margin: 0 0 rem(30) 0;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: rem(30);
+      height: rem(30);
+      background: $red-btn;
+      top: 50%;
+      left: -60px;
+      margin: rem(-15) 0 0 0;
+    }
+  }
+
+  &__sub {
+    font-size: rem(20);
+    font-family: $georgia;
+    margin: 0 0 rem(20) 0;
+  }
+
+  &__list {
+
+    li {
+      margin: 0 0 1rem 0;
+      font-size: rem(20);
+
+      &:last-child { margin: 0; }
+
+      img {
+        width: 200px;
+        margin: 0 1rem 0 0;
+      }
+    }
+  }
+
+  &__text {
+    font-family: $georgia;
+    font-size: rem(18);
+    padding: rem(60) rem(50);
+    border-left: 100px solid $red-btn;
+    background: $white;
+
+    p {
+      margin: 0 0 rem(40) 0;
+
+      &:last-child { margin: 0; }
+    }
+
+    &-w {
+      padding: rem(100) 0;
+      margin: 0 0 1rem 0;
+    }
+  }
+
+  &__note {
+    font-size: rem(18);
+    font-family: $georgia;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  &__welding {
+    
+    img {
+      width: 100%;
+    }
+
+    p {
+      padding: 2rem 0;
+      text-align: center;
+      box-shadow: $box-shadow;
+    }
+  }
+}

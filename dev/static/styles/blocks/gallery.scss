@@ -1,0 +1,76 @@
+.gallery {
+  font-size: rem(20);
+  background: $gray;
+
+  &__slider {
+    position: relative;
+    display: none;
+    margin: 0 0 rem(30) 0;
+
+    &.slick-initialized {
+      display: block;
+    }
+
+    .slick-arrow {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+      background: rgba($black, .5);
+      cursor: pointer;
+
+      img {
+        width: rem(30);
+        height: auto;
+      }
+    }
+
+    .slick-list {
+      z-index: 1;
+    }
+
+    .slick-prew {
+      left: 0;
+
+      img {
+        transform: rotate(180deg);
+      }
+    }
+
+    .slick-next {
+      right: 0;
+    }
+  }
+
+  &__slide {
+    outline: none;
+    height: 360px;
+
+    a {
+      display: block;
+      height: 100%;
+      position: relative;
+      background: center/contain no-repeat;
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        width: rem(50);
+        height: rem(50);
+        background: rgba($black, .5) center/50% url('/static/images/general/zoom.png') no-repeat;
+        cursor: pointer;
+        border-radius: rem(5);
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

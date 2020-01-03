@@ -1,0 +1,17 @@
+extends template/main
+
+block variables
+  - var title = 'Главная страница';
+  - var pageClass = 'index-page';
+
+block content
+  include blocks/main
+  include blocks/about
+  include blocks/services
+  include blocks/portfolio
+  include blocks/team
+  include blocks/gallery
+  include blocks/partners
+  include blocks/more
+  include blocks/call
+  include blocks/contacts

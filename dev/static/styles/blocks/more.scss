@@ -1,0 +1,71 @@
+.more {
+  padding: 0;
+  overflow: hidden;
+
+  &__text {
+    position: relative;
+    padding: rem(90) rem(30) rem(90) 0;
+    color: $white;
+
+    .bg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: -1;
+      width: 60vw;
+      background-image: linear-gradient(54deg, #bd1014 0%, #510900 100%);
+    }
+
+    h1 {
+      position: relative;
+      text-transform: uppercase;
+      font-size: rem(48);
+      margin: 0 0 rem(40) 0;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -40px;
+        top: 0;
+        height: 100%;
+        width: 20px;
+        background: $white;
+      }
+    }
+
+    p {
+      font-size: rem(20);
+      margin: 0 0 rem(30) 0;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    color: $black;
+    background: $white;
+    padding: rem(20) rem(30);
+  }
+
+  &__action {
+    padding: 0 0 0 rem(60);
+  }
+
+  &__word {
+    display: inline-block;
+    padding: rem(20);
+    position: relative;
+
+    &:after {
+      content: 'Скачать';
+      display: block;
+      position: absolute;
+      font-size: rem(14);
+      color: $black;
+      left: 50%;
+      bottom: -20px;
+      transform: translateX(-50%);
+    }
+  }
+}

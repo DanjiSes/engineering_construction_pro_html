@@ -1,0 +1,28 @@
+.hamburger-line {
+  width: 25px;
+  height: 3px;
+  background: $white;
+  margin: 0 0 5px 0;
+
+  &:last-child { margin: 0; }
+}
+
+.number {
+  font-size: rem(96);
+  font-weight: 700;
+}
+
+.text-italic {
+  font-family: $georgia;
+}
+
+section {
+  padding: rem(80) 0;
+
+  & > h1 {
+    font-size: rem(48);
+    text-transform: uppercase;
+    margin: 0 0 rem(40) 0;
+    text-align: center;
+  }
+}
